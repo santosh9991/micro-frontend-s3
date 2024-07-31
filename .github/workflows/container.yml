@@ -15,7 +15,7 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: micro-frontend-s3  # Reference the environment with the secrets
+    environment: micro-froentend-s3  # Reference the environment with the secrets
 
     steps:
       - name: Checkout repository
