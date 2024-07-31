@@ -12,7 +12,8 @@ const prodConfig = {
     // we specify how to name the outputed files with format [name].[contenthash].js// hash of the content of the files
     // 
     output:{
-        filename: '[name].[contenthash].js'
+        filename: '[name].[contenthash].js',
+        publicPath: '/container/latest/'
     },
     // Module
     plugins:[
