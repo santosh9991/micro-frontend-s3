@@ -30,7 +30,6 @@ jobs:
       - name: Debug Environment Variables
         run: |
           echo "AWS_ACCESS_KEY_ID is set: ${{ secrets.AWS_ACCESS_KEY_ID }}"
-          echo "AWS_SECRET_ACCESS_KEY is set: ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
           echo "AWS_S3_BUCKET_NAME is ${{ secrets.AWS_S3_BUCKET_NAME }}"
           echo "AWS_DEFAULT_REGION is ${{ secrets.AWS_DEFAULT_REGION }}"
         env:
