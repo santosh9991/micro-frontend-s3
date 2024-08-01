@@ -26,7 +26,8 @@ jobs:
 
       - name: Build project
         run: npm run build
-
+        env:
+          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
       - name: Debug Environment Variables
         run: |
           echo "AWS_ACCESS_KEY_ID is set: ${{ secrets.AWS_ACCESS_KEY_ID }}"
