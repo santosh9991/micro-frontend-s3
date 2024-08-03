@@ -8,8 +8,8 @@ const generateClassName = createGenerateClassName({
     productionPrefix: 'co'
 })
 export default ()=>{
-    return <BrowserRouter generateClassName={generateClassName}>
-    <StylesProvider>
+    return <BrowserRouter >
+    <StylesProvider generateClassName={generateClassName}>
     <div>
         <Header/>
         <MarketingApp/>

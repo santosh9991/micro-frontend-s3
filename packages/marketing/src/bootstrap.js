@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {createBrowserHistory} from 'history'
 import App from './App';
 
 // Mount function to start up the app
 const mount = (el) => {
-  ReactDOM.render(<App />, el);
+  const history = createBrowserHistory();
+  ReactDOM.render(<App history={history}/>, el);
 };
 
 // If we are in development and in isolation,
