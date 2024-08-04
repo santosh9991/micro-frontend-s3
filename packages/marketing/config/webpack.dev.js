@@ -8,9 +8,7 @@ const devConfig = {
     entry: './src/index.js',
     devServer: {
         port: 8081,
-        historyApiFallback: {
-            index: 'index.html'
-        }
+        historyApiFallback: true
     },
     plugins:[
         new HtmlWebpackPlugin({
