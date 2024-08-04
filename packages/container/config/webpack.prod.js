@@ -23,7 +23,8 @@ const prodConfig = {
                 //where we should go to, to get some source code
                 // key should match to the input string that we use to import this in our container
                 // marketin@<domain of the remote entry file where we get it from>
-                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`
+                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
+                auth: `auth@${domain}/auth/latest/remoteEntry.js`
             },
             shared: packageJson.dependencies
         })
